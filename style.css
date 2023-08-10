@@ -1,0 +1,197 @@
+body {
+  background-color: #252525;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+span {
+  animation: flow 2s ease-in-out infinite;
+  background: linear-gradient(60deg,  #44d4d6, #af3afc);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0 50%
+  }
+  
+  50% {
+    background-position: 50% 100%
+  }
+  
+  100% {
+    background-position: 0 50%
+  }
+}
+
+
+
+.shape {
+animation: changeShape 3s ease-in-out infinite ;
+}
+
+@keyframes changeShape{
+0%,100% {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+}
+
+25%,75%{
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+}
+50% {
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid #e74c3c;
+  background-color: #252525;
+  rotate: 360deg;
+
+}
+}
+
+
+
+
+ @keyframes slicePizza {
+  0%, 100% {
+    clip-path: polygon(50% 0%, 50% 100%, 50% 100%, 50% 0%);
+  }
+  12.5%, 7.5% {
+    clip-path: polygon(50% 0%, 50% 100%, 100% 100%, 0% 0%);
+  }
+  25%, 75% {
+    clip-path: polygon(50% 0%, 100% 100%, 100% 100%, 0% 0%);
+  }
+  37.5%, 62.5% {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%, 0% 0%);
+  }
+  50% {
+    clip-path: polygon(50% 0%, 0% 100%, 0% 100%, 0% 0%);
+  }
+}
+.pizza {
+  width: 200px;
+  height: 200px;
+  background: #ffcc00;
+  animation: slicePizza 2s ease infinite;
+} 
+
+
+.peperoni{
+  width: 200px;
+  height: 200px;
+  margin: 150px 0px;
+  position: relative;
+}
+.slice1{
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid #e74c3c;
+  position: absolute;
+  rotate:0deg;
+
+}
+.slice2{
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid #d84838;
+  position: absolute;
+  left: -78px;
+  top: -40px;
+  rotate:53deg;
+}
+.slice3{
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid #cd4334;
+  position: absolute;
+  top: -126px;
+  left: -94px;
+  rotate:106deg;
+}
+.slice4{
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid #ba3e30;
+  position: absolute;
+  top: -190px;
+  left: -35px;
+  rotate:159.5deg;
+}
+.slice5{
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid #a3372b;
+  position: absolute;
+  top: -180px;
+  left: 51px;
+  rotate:213deg;
+}
+.slice6{
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid #963227;
+  position: absolute;
+  
+  top: -105px;
+  left: 97px;
+  rotate:266deg;
+}
+.slice7{
+  width: 0px;
+  height: 0px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 210px solid #812b22;
+  position: absolute;
+
+  top: -32px;
+  left: 83px;
+  rotate:308deg;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}

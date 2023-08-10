@@ -1,0 +1,180 @@
+body {
+   font-family:Tahoma, Geneva, sans-serif;
+   max-width: 100%;
+}
+
+h2 {
+   text-align: center;
+}
+
+
+
+.hold1 {
+   position:absolute;
+   width:201px;
+   height:201px;
+   clip:rect(0px,201px,201px,100px);
+   left: 20%;
+
+}
+.hold1:hover{
+    animation: slice 0.2s ease-in-out initial ;
+    clip:rect(0px,201px,201px,105px);
+    margin-left: 8px;
+    top: -10px;
+    transition-delay: 3s;
+}
+
+.hold2{
+    position:absolute;
+    width:201px;
+    height:201px;
+    clip:rect(0px,201px,201px,100px);
+    left: 20%;
+ }
+ .hold2:hover{
+     animation: slice 0.2s ease-in-out initial ;
+     clip:rect(0px,201px,201px,105px);
+     top:5px;
+     left:21%;
+
+ }
+
+ .hold3{
+   position:absolute;
+   width:201px;
+   height:201px;
+   clip:rect(0px,201px,201px,100px);
+   left: 20%;
+}
+.hold3:hover{
+    animation: slice 0.2s ease-in-out initial ;
+    clip:rect(0px,201px,201px,105px);
+   top: 20px;
+    left:20.7%;
+}
+
+ .hold4{
+   position:absolute;
+   width:201px;
+   height:201px;
+   clip:rect(0px,201px,201px,100px);
+   left: 20%;
+}
+.hold4:hover{
+    animation: slice 0.2s ease-in-out initial ;
+    clip:rect(0px,201px,201px,105px);
+    top:25px;
+    left: 19.6%;
+
+}
+
+.hold6{
+   position:absolute;
+   width:201px;
+   height:201px;
+   clip:rect(0px,201px,201px,100px);
+   left: 20%;
+}
+.hold6:hover{
+    animation: slice 0.2s ease-in-out initial ;
+    clip:rect(0px,201px,201px,105px);
+    top:-10px;
+   left: 19.2%;
+}
+
+
+ .hold5{
+    position:absolute;
+    width:201px;
+    height:201px;
+    clip:rect(0px,201px,201px,100px);
+    left: 20%;
+ }
+ .hold5:hover{
+     animation: slice 0.2s ease-in-out initial ;
+     clip:rect(0px,201px,201px,105px);
+     top: 10px;
+     margin-left: -15px;
+ }
+
+
+.Pizza {
+   position:absolute;
+   width:201px;
+   height:201px;
+   clip:rect(0px,100px,201px,0px);
+   border-radius:100px;
+}
+
+   .PizzaContainer {
+   height:200px;
+   width:200px;
+   margin:0 21px 21px;
+}
+
+#PizzaSliceYellow .Pizza {
+   background-color:rgb(255, 255, 0);
+   transform:rotate(62deg);
+
+}
+#PizzaSliceYellow:hover{
+   animation: slice1  3s ease-in-out ;
+
+}
+
+
+#PizzaSliceBlue {
+   transform:rotate(61deg);
+}
+
+#PizzaSliceBlue .Pizza {
+   background-color:rgb(0, 30, 255);
+   transform:rotate(61deg);
+}
+
+#PizzaSliceRed {
+   transform:rotate(121deg);
+}
+
+#PizzaSliceRed .Pizza {
+   background-color:rgb(255, 8, 0);
+   transform:rotate(61deg);
+}
+
+#PizzaSliceGreen {
+   transform:rotate(181deg);
+}
+
+#PizzaSliceGreen .Pizza {
+   background-color:rgb(21, 224, 38);
+   transform:rotate(61deg);
+}
+
+#PizzaSliceOrange {
+   transform:rotate(241deg);
+}
+
+#PizzaSliceOrange .Pizza {
+   background-color:rgb(255, 149, 0);
+   transform:rotate(61deg);
+}
+
+#PizzaSliceGrey {
+   transform:rotate(301deg);
+}
+
+#PizzaSliceGrey .Pizza {
+   background-color:grey;
+   transform:rotate(61deg);
+}
+
+
+@keyframes slice {
+    0%,100%{
+        clip:rect(0px,201px,201px,100px);
+    }
+    50%{
+        clip:rect(0px,201px,201px,105px);
+    }
+}
